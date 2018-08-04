@@ -1,0 +1,10 @@
+Field,Type,Null,Key,Default,Extra
+address_id,smallint(5) unsigned,NO,PRI,,auto_increment
+address,varchar(50),NO,,,
+address2,varchar(50),YES,,,
+district,varchar(20),NO,,,
+city_id,smallint(5) unsigned,NO,MUL,,
+postal_code,varchar(10),YES,,,
+phone,varchar(20),NO,,,
+location,geometry,NO,MUL,,
+last_update,timestamp,NO,,CURRENT_TIMESTAMP,on update CURRENT_TIMESTAMP
